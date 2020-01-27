@@ -14,13 +14,12 @@ alias gco='git checkout'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
-alias gp='git pull'
+alias gp='git pull origin $(git-branch)'
+alias gpu='git push origin $(git-branch)'
+alias gplease='git push origin $(git-branch) --force-with-lease'
 alias gpal='git pull --all'
 alias gftp='git fetch -p'
 alias gdm='git-delete-merged'
-
-alias gpu='git push'
-alias gplease="git push --force-with-lease"
 
 # Remove `+` and `-` from start of diff lines; just rely upon color.
 alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
