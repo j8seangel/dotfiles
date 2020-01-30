@@ -24,8 +24,8 @@ alias gdm='git-delete-merged'
 # Remove `+` and `-` from start of diff lines; just rely upon color.
 alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
 
-alias gc='git commit'
-alias gca='git commit -a'
+alias gcom='git commit'
+alias gcoa='git commit -a'
 alias gcam='git add -A && git commit -av -m'
 alias gcamend='git add -A && git commit --amend --reuse-message=HEAD'
 
