@@ -42,8 +42,8 @@
   # defaults write com.apple.screencapture location -string "${HOME}/Screenshots"
 
 # Menu bar: hide percentage and show remaining battery time
-  defaults write com.apple.menuextra.battery ShowPercent -string "NO"
-  defaults write com.apple.menuextra.battery ShowTime -string "YES"
+  defaults write com.apple.menuextra.battery ShowPercent -string "YES"
+  defaults write com.apple.menuextra.battery ShowTime -string "NO"
 
 # Hot corners
 # Possible values:
@@ -194,7 +194,7 @@ sudo systemsetup -setremotelogin off
 sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false
 
 # Automatically lock the login keychain for inactivity after 6 hours
-security set-keychain-settings -t 21600 -l ~/Library/Keychains/login.keychain
+security -v set-keychain-settings -t 72000 -l ~/Library/Keychains/login.keychain
 
 # Destroy FileVault key when going into standby mode, forcing a re-auth.
 # Source: https://web.archive.org/web/20160114141929/http://training.apple.com/pdf/WP_FileVault2.pdf
