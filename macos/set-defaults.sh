@@ -19,6 +19,9 @@
 # Lock the Dock size
   defaults write com.apple.dock size-immutable -bool true
 
+# Not show recent apps in dock
+  defaults write com.apple.dock show-recents -bool FALSE
+
 # Dock magnification
   defaults write com.apple.dock magnification -bool true
 
