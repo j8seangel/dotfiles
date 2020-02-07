@@ -73,6 +73,11 @@
   defaults write com.apple.dock wvous-br-corner -int 4
   defaults write com.apple.dock wvous-br-modifier -int 0
 
+# Make it inmutable
+# defaults write com.apple.Dock position-immutable -bool true; killall Dock
+# defaults write com.apple.Dock size-immutable -bool true; killall Dock
+# defaults write com.apple.Dock contents-immutable -bool true; killall Dock
+
 
 ###############################################################################
 # Terminal & iTerm2                                                           #
