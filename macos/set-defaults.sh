@@ -203,7 +203,7 @@ sudo systemsetup -setremotelogin off
 sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false
 
 # Automatically lock the login keychain when system sleeps
-security -v set-keychain-settings -l ~/Library/Keychains/login.keychain
+security -v set-keychain-settings ~/Library/Keychains/login.keychain
 
 # Destroy FileVault key when going into standby mode, forcing a re-auth.
 # Source: https://web.archive.org/web/20160114141929/http://training.apple.com/pdf/WP_FileVault2.pdf
