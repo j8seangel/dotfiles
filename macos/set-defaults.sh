@@ -116,14 +116,15 @@ defaults write org.m0k.transmission MagnetOpenAsk -bool false
 defaults write org.m0k.transmission DeleteOriginalTorrent -bool true
 
 # Hide the donate message
-defaults write org.m0k.transmission WarningDonate -bool false
+defaults write org.m0k.transmission WarningDonate -bool true
 # Hide the legal disclaimer
-defaults write org.m0k.transmission WarningLegal -bool false
+defaults write org.m0k.transmission WarningLegal -bool true
 
 # IP block list.
 # Source: https://giuliomac.wordpress.com/2014/02/19/best-blocklist-for-transmission/
 defaults write org.m0k.transmission BlocklistNew -bool true
 defaults write org.m0k.transmission BlocklistURL -string "http://john.bitsurge.net/public/biglist.p2p.gz"
+defaults write org.m0k.transmission BlocklistURL -string "https://github.com/sahsu/transmission-blocklist/releases/latest/download/blocklist.gz"
 defaults write org.m0k.transmission BlocklistAutoUpdate -bool true
 
 # Randomize port on launch
@@ -201,8 +202,8 @@ sudo systemsetup -setremotelogin off
 # Disable guest account login
 sudo defaults write /Library/Preferences/com.apple.loginwindow GuestEnabled -bool false
 
-# Automatically lock the login keychain for inactivity after 6 hours
-security -v set-keychain-settings -t 72000 -l ~/Library/Keychains/login.keychain
+# Automatically lock the login keychain when system sleeps
+security -v set-keychain-settings -l ~/Library/Keychains/login.keychain
 
 # Destroy FileVault key when going into standby mode, forcing a re-auth.
 # Source: https://web.archive.org/web/20160114141929/http://training.apple.com/pdf/WP_FileVault2.pdf
