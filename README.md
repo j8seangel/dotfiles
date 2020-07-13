@@ -2,7 +2,6 @@
 
 Moving from [bash dotfiles](https://github.com/j8seangel/dotfiles) to zsh using [holman](https://github.com/holman/dotfiles) as base
 
-
 ## topical
 
 Everything's built around topic areas. If you're adding a new area to your
@@ -10,7 +9,6 @@ forked dotfiles — say, "Java" — you can simply add a `java` directory and pu
 files in there. Anything with an extension of `.zsh` will get automatically
 included into your shell. Anything with an extension of `.symlink` will get
 symlinked without extension into `$HOME` when you run `script/bootstrap`.
-
 
 ## components
 
