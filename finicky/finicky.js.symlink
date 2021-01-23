@@ -1,0 +1,55 @@
+// Remember to install app from
+// https://github.com/johnste/finicky
+
+module.exports = {
+  defaultBrowser: 'Safari',
+  options: {
+    hideIcon: true,
+    checkForUpdate: false,
+  },
+  handlers: [
+    {
+      match: 'https://meet.google.com/vwm-ifbp-qqd',
+      browser: {
+        name: 'Google Chrome',
+        profile: 'Profile 1'
+      }
+    },
+    {
+      match: finicky.matchHostnames(['meet.google.com', 'jira.com']),
+      browser: 'Google Chrome',
+    },
+    {
+      match: 'open.spotify.com*',
+      browser: 'Spotify',
+    },
+  ],
+  rewrite: [
+    {
+      // Remove all marketing/tracking information from urls
+      match: finicky.matchHostnames([/amazon\.(es|com)/]),
+      url({ url }) {
+        const removeKeysStartingWith = ['utm_', 'uta_']; // Remove all query parameters beginning with these strings
+        const removeKeys = ['fblid', 'gclid']; // Remove all query parameters matching these keys
+
+        const search = url.search
+          .split('&')
+          .map((parameter) => parameter.split('='))
+          .filter(
+            ([key]) =>
+              !removeKeysStartingWith.some((startingWith) =>
+                key.startsWith(startingWith)
+              )
+          )
+          .filter(
+            ([key]) => !removeKeys.some((removeKey) => key === removeKey)
+          );
+
+        return {
+          ...url,
+          search: search.map((parameter) => parameter.join('=')).join('&'),
+        };
+      },
+    },
+  ],
+};
