@@ -22,6 +22,8 @@ then
   echo "  Installing brew apps."
   brew install youtube-dl
   brew install yarn
+  brew install zsh-syntax-highlighting
+  brew install zsh-autosuggestions
 fi
 
 exit 0
