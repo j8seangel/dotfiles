@@ -344,8 +344,10 @@ defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}/Desk
 
 # show hidden files by default
 defaults write com.apple.finder AppleShowAllFiles -bool true
+
 # show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
+
 # performing a search, search the current folder by default
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
@@ -377,7 +379,7 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true
 chflags nohidden ~/Library
 
 # allow quitting via ⌘ + Q; doing so will also hide desktop icons
-defaults write com.apple.finder QuitMenuItem -bool true
+# defaults write com.apple.finder QuitMenuItem -bool true
 
 ###############################################################################
 # Energy saving                                                               #
