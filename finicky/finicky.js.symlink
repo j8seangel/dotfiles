@@ -20,6 +20,10 @@ module.exports = {
       browser: 'Google Chrome',
     },
     {
+      match: /localhost:[0-9]{1,4}/,
+      browser: 'Google Chrome',
+    },
+    {
       match: 'open.spotify.com*',
       browser: 'Spotify',
     },
