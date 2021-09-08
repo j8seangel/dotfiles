@@ -9,7 +9,7 @@ module.exports = {
   },
   handlers: [
     {
-      match: 'https://meet.google.com/vwm-ifbp-qqd',
+      match: 'https://meet.google.com/tgk-dcqz-zgg',
       browser: {
         name: 'Google Chrome',
         profile: 'Profile 1'
