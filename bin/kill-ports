@@ -1,0 +1,5 @@
+#!/bin/sh
+#
+# Kill services using ports from 3000 to 3003
+
+kill $(lsof -ti:3000,3001,3002,3003)
