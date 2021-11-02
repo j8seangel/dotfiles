@@ -19,6 +19,9 @@ then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   fi
 
+  echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> /Users/joseangel/.zprofile
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+
   echo "  Installing brew apps."
   brew install youtube-dl
   brew install yarn
