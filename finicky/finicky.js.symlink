@@ -16,7 +16,7 @@ module.exports = {
       }
     },
     {
-      match: finicky.matchHostnames(['meet.google.com', 'globalfishingwatch.atlassian.net']),
+      match: finicky.matchHostnames(['meet.google.com', 'globalfishingwatch.org', 'globalfishingwatch.atlassian.net', 'zoom.us']),
       browser: 'Google Chrome',
     },
     {
