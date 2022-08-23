@@ -8,6 +8,8 @@
 	<string>Frontend</string>
 	<key>Default Bookmark Guid</key>
 	<string>468ED37C-FA76-4AA0-9673-7A4AC339FBA6</string>
+	<key>EnableAPIServer</key>
+	<true/>
 	<key>EnableDivisionView</key>
 	<false/>
 	<key>GlobalKeyMap</key>
@@ -1975,7 +1977,7 @@ Frontend:Restore Window Arrangement</string>
 	<key>RightOption</key>
 	<integer>3</integer>
 	<key>ShowFullScreenTabBar</key>
-	<true/>
+	<false/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SoundForEsc</key>

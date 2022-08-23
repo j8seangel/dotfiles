@@ -31,4 +31,4 @@ alias gcam='git add -A && git commit -av -m'
 alias gcamend='git add -A && git commit --amend --reuse-message=HEAD'
 
 alias ge='git-edit-new'
-alias go='git-open'
+alias gho='git-open'
