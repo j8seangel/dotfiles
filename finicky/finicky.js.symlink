@@ -16,7 +16,14 @@ module.exports = {
       }
     },
     {
-      match: finicky.matchHostnames(['meet.google.com', 'globalfishingwatch.org', 'globalfishingwatch.atlassian.net', 'zoom.us', 'github.com']),
+      match: finicky.matchHostnames([
+        'meet.google.com',
+        'globalfishingwatch.org',
+        'globalfishingwatch.atlassian.net',
+        'zoom.us',
+        'github.com',
+        'notion.so'
+      ]),
       browser: 'Google Chrome',
     },
     {
