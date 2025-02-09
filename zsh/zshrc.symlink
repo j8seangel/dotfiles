@@ -60,6 +60,7 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 
 # ZSH Tools
 export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/opt/homebrew/share/zsh-syntax-highlighting/highlighters
+source /opt/homebrew/share/zsh-syntax-highlighting/highlighters
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 
