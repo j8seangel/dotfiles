@@ -15,7 +15,7 @@ alias ggo='git checkout -b'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
-alias gp='git pull origin $(git-branch)'
+alias gp='git pull origin $(git-branch) --rebase'
 alias gpu='git push origin $(git-branch)'
 alias gplease='git push origin $(git-branch) --force-with-lease'
 alias gpal='git pull --all'
