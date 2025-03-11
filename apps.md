@@ -1,31 +1,33 @@
 # My must have apps
 
-- [ ] VLC
-- [ ] Whatsapp
-- [ ] VSCode
-- [ ] Slack
-- [ ] Rectangle
-- [ ] iTerm
-- [ ] Finicky
-- [ ] Transmission
-- [ ] Mounty NTFS
-- [ ] iStats menu
-- [ ] Insomnia
-- [ ] Docker
+- [ ] Adguard VPN
 - [ ] Bitwarden
-- [ ] Sketch
-- [ ] Spark
-- [ ] Spotify
-- [ ] Telegram
-- [ ] Paste
-- [ ] Wipr
-- [ ] TripMode
+- [ ] Bruno
+- [ ] Chrome
+- [ ] Cursor
+- [ ] Docker
+- [ ] Finicky
 - [ ] Firefox
+- [ ] iHosts
+- [ ] iStats menu
+- [ ] iTerm
+- [ ] Paste
+- [ ] Rectangle
+- [ ] Slack
+- [ ] Spotify
+- [ ] Transmission
+- [ ] TripMode
+- [ ] Tuple
+- [ ] VLC
+- [ ] Wipr
 
 ## Not essentials
 
-- [ ] Caption?
-- [ ] CleanMyMac?
+- [ ] Caption
+- [ ] CleanMyMac
 - [ ] Kap?
+- [ ] Mounty NTFS
 - [ ] QGIS
-- [ ] Reeder?
+- [ ] Reeder
+- [ ] TablePlus
+- [ ] Whatsapp
