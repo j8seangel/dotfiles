@@ -21,6 +21,7 @@ alias gplease='git push origin $(git-branch) --force-with-lease'
 alias gpal='git pull --all'
 alias gftp='git fetch -p'
 alias gdm='git-delete-local-merged'
+alias gcp='git-copy-branch-name'
 
 # Remove `+` and `-` from start of diff lines; just rely upon color.
 alias gd='git diff --color | sed "s/^\([^-+ ]*\)[-+ ]/\\1/" | less -r'
