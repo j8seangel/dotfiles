@@ -1,5 +1,5 @@
 #!/bin/sh
 #
-# Delete all local and remote branches that have been merged into HEAD.
+# Delete all local branches that have been merged into HEAD.
 
-git branch -r --merged | grep -v "$(git rev-parse --abbrev-ref HEAD)" | sed 's/origin\///' | xargs -n 1 git push --delete origin
+git branch --merged | grep -v "\\*" | xargs -n 1 git branch -d

@@ -11,7 +11,7 @@ alias gb='git branch'
 alias gba='git branch -a'
 alias gbranch='git rev-parse --abbrev-ref HEAD'
 alias gco='git checkout'
-alias ggo='git checkout -b'
+alias ggo='f() { git checkout "$1" 2>/dev/null || git checkout -b "$1"; }; f'
 alias gs='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 
