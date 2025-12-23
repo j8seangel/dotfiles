@@ -21,13 +21,13 @@
 - [ ] VLC
 - [ ] Wipr
 
-## Not essentials
+## Not essentials but nth
 
 - [ ] Caption
 - [ ] CleanMyMac
-- [ ] Kap?
+- [ ] Kap
 - [ ] Mounty NTFS
 - [ ] QGIS
 - [ ] Reeder
 - [ ] TablePlus
-- [ ] Whatsapp
+- [ ] Piphero
