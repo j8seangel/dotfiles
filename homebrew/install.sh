@@ -23,7 +23,6 @@ then
   eval "$(/opt/homebrew/bin/brew shellenv)"
 
   echo "  Installing brew apps."
-  brew install youtube-dl
   brew install yarn
   brew install zsh-syntax-highlighting
   brew install zsh-autosuggestions
