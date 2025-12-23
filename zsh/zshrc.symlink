@@ -82,3 +82,13 @@ if [ -f '/Users/joseangel/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/josea
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/joseangel/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/joseangel/google-cloud-sdk/completion.zsh.inc'; fi
+
+# pnpm
+export PNPM_HOME="/Users/joseangel/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+export PATH="$HOME/.local/bin:$PATH"
