@@ -19,8 +19,7 @@ const gfwHandler: BrowserHandler = {
       'drive.google.com',
       'calendar.google.com',
       'meet.google.com',
-      'globalfishingwatch.org',
-      'globalfishingwatch.atlassian.net',
+      'global-fishing-watch.sentry.io',
     ].some((host) => url.host.includes(host));
   },
   browser: 'Google Chrome',

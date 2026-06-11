@@ -1,2 +1,3 @@
 git/gitconfig.local.symlink
 git/auth-token.zsh
+npmrc.symlink

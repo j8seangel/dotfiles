@@ -1179,7 +1179,7 @@ Frontend:Restore Window Arrangement</string>
 	<key>RightOption</key>
 	<integer>3</integer>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>ShowPaneTitles</key>
 	<false/>
 	<key>SoundForEsc</key>
