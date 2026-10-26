@@ -18,3 +18,4 @@ Thumbs.db
 
 # Config
 .extra
+**/.claude/settings.local.json

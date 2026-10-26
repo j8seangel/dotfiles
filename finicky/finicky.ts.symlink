@@ -20,6 +20,7 @@ const gfwHandler: BrowserHandler = {
       'calendar.google.com',
       'meet.google.com',
       'global-fishing-watch.sentry.io',
+      'cloud.nx.app',
     ].some((host) => url.host.includes(host));
   },
   browser: 'Google Chrome',
@@ -48,8 +49,8 @@ const trackingRewrite: UrlRewriteRule = {
       .filter(
         ([key]) =>
           !removeKeysStartingWith.some((startingWith) =>
-            key.startsWith(startingWith)
-          )
+            key.startsWith(startingWith),
+          ),
       )
       .filter(([key]) => !removeKeys.some((removeKey) => key === removeKey));
 
